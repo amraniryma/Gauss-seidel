@@ -1,0 +1,10 @@
+def read_float(msg):
+    while True:
+        value = input(msg)
+        if value.strip() == "":
+            print("Invalid input. Try again.")
+            continue
+        try:
+            return float(value)
+        except ValueError:
+            print("Invalid number. Try again.")
