@@ -1,0 +1,6 @@
+def read_matrix(n):
+    A = np.zeros((n, n), dtype=float)
+    for i in range(n):
+        for j in range(n):
+            A[i][j] = read_float(f"A[{i+1}][{j+1}]: ")
+    return A
